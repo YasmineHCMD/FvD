@@ -56,20 +56,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-Tijdens de tweede werkgroep van Frontend Development zijn we ons gaan focussen op de toegankelijkheid van de door ons gekozen site en hoe we dit beter kunnen doen bij onze namaak-versie. Er kunnen namelijk speciale hulpmiddelen worden verwerkt in een site, bijvoorbeeld voor slechtziende mensen of gebruikers met een motorische beperking. In de les hebben we dit zelf kunnen ervaren. We konden eerst verschillende brillen met een beperkt zicht passen en daarmee vervolgens dingen uitvoeren op onze laptop. Verder konden we ervaren hoe het is om met minder vingers te typen en ten slotte konden we door middel van elektroden op onze armen spierspasmes simuleren. Dit was voor ons best grappig om even mee te maken, maar voor gebruikers met deze beperkingen is het belangrijk om hier rekening mee te houden.
-
-Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een screenreader. Dit is een programma dat alle knoppen, links en geschreven tekst voorleest. Deze had ik gelukkig al standaard op mijn laptop staan, waardoor ik snel kon beginnen aan de eerste test. Tijdens deze test moesten we onze gekozen site laten voorlezen door de screenreader en om vervolgens te controleren of dit overal wel goed ging. In het begin was de screenreader best overweldigend voor mij en wist ik niet precies hoe je een specifiek stuk tekst moest laten voorlezen. Maar daar kwam ik later achter: je kunt gewoon een stuk van de pagina selecteren met je cursor en dat wordt dan als enige voorgelezen. Als je niets selecteerd, werd Nu.nl bij mijvan boven naar beneden helemaal voorgelezen. Ik kan me voorstellen dat er gebruikers zijn die dit niet prettig vinden. Verder viel het me op dat er maar weinig alt-tags ware, zowel bij foto's als afbeeldingen van icoontjes. Als een blinde of slechtziende gebruiker zou je dus nooit kunnen weten wat er op de foto's te zien is of waar de icoontjes voor staan. Dit vond ik best schokkend, aangezien wij al vanaf les 1 bij internetstandaarden hebben geleerd dat dit belangrijk is. Uiteindelijk werkt de screenreader bij Nu.nl grotendeels goed, alleen moet je wel precies weten wat je doet. En daarnaast zijn de twee gebreken die ik net heb genoemd zo groot dat ik de site persoonlijk niet toegankelijk genoeg vind. Ik hoop dit dus uiteindelijk te kunnen verbeteren met mijn namaak-versie.
-
-Bij het tweede deel van de toegankelijkheidstest bij Nu.nl hebben we de officiele checklist van The A11Y Project gebruikt. Toegankelijkheid wordt namelijk steeds belangrijker, waardoor websites zich aan bepaalde regels moeten houden, anders riskeren ze een boete. De checklist bestaat uit 3 gradaties: de essentiele hulpmiddelen voor toegankelijkheid, hulpmiddelen die prettig zijn om te hebben, en ten slotte hulpmiddelen die exclusief voor een bepaalde groep gebruikers zijn bedoeld. The A11Y Project wil graag dat alle sites aan de eerste twee gradaties voldoen. De checklist is best lang en veel punten worden wel standaard door bedrijven in de site verwerkt, maar er waren toch een aantal punten die me bij het onderzoeken van Nu.nl opvielen.
-
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
-  - Nu.nl kent ondanks zijn professionaliteit toch wel wat fouten in de code. Bij het inspecteren kwamen er 5 errors, 19 issues en 13 infos naar voren.
-  - De verschillende categorieen binnen de navigatiebar hebben allemaal een kleur om ze op te laten vallen. Tussen deze kleuren zit veel contrast, om goed het verschil aan te geven.
-  - Verder bevat de site weinig kleur, aangezien van de foto's alleen zwart en wit.
-  - Veel elementen binnen de code staan op hidden, zodat de site niet meteen te overweldigend wordt.
-  - Voor linkjes wordt het a-element bijna niet gebruikt.
 
 </details>
 
@@ -81,13 +69,14 @@ Bij het tweede deel van de toegankelijkheidstest bij Nu.nl hebben we de officiel
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Screenshot-homepage.pdf" width="375px" alt="breakdown van de hele pagina">
+    <img src="readme-images/Screenshot-shop_pagina.pdf" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/homepage_annotaties.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/shop-page_annotaties.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
