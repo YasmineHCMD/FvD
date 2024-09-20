@@ -17,7 +17,23 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+    
+    color-scheme: light dark;
+    --bg: light-dark(lightgrey, black);
+    --clr: light-dark(black, White);
 }
+    html:has([value="light"]:checked) {
+    color-scheme: light;
+    }
+    html:has([value="dark"]:checked) {
+    color-scheme: dark;
+    }
+    html {
+    color: var(--clr);
+    background-color: var(--bg);
+    }
+
+
 
 
 
@@ -44,33 +60,38 @@ header {
     padding: 0.01em;
 }
 
-header ul{
+header ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    li:nth-of-type(3) {
-        color:dodgerblue;
-    }
-    
-    li:nth-of-type(4) {
-        color: red;
-    }
-    
-    li:nth-of-type(5) {
-        color: orange;
-    }
-    
-    li:nth-of-type(6) {
-        color:mediumvioletred;
-    }
+    cursor: pointer;
+}
+
+header li {
+    font-weight: bold;
+    font-size: smaller;
 }
 
 li {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: smaller;
     padding: 1em;
+}
+
+header li:nth-of-type(3) {
+    color:dodgerblue;
+}
+
+header li:nth-of-type(4) {
+    color: red;
+}
+
+header li:nth-of-type(5) {
+    color: orange;
+}
+
+header li:nth-of-type(6) {
+    color:mediumvioletred;
 }
 
 .logo {
@@ -82,13 +103,42 @@ header section {
     display: flex;
     flex-direction:row;
     align-items: center;
-    column-gap: 1em;
-    margin-left: 3em;
+    column-gap: 1vw;
+    margin-left: 3vw;
+}
+
+#dropdown_menu {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    font-size: smaller;
+    border: 0.02em outset;
+    border-color: gainsboro;
+}
+
+#dropdown_menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#dropdown_menu .linkjes {
+    font-weight: bold;
 }
 
 .icon {
-    width: 1em;
-    height: 1em;
+    width: 1vw;
+    height: 1vw;
+    transition: 1000ms ease;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+main {
+    margin-top: 5vw;
 }
 
 h2 {
@@ -96,79 +146,136 @@ h2 {
     font-size: small;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
 .nieuwsblokje {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3em;
+    margin: 3vw;
+    position: relative;
+}
+
+.nieuwsblokje h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.nieuwsblokje:nth-of-type(2) {
+    h2 {
+    color: dodgerblue;
+    }
+}
+
+.nieuwsblokje:nth-of-type(3) {
+    h2 {
+    color: red;
+    }
+}
+
+.nieuwsblokje:nth-of-type(4) {
+    h2 {
+    color: orange;
+    }
+}
+
+.nieuwsblokje:nth-of-type(5) {
+    h2 {
+    color: mediumvioletred;
+    }
 }
 
 .nieuwsblokje img {
-    width: 40em;
-    border-radius: 2%;
+    width: 50%;
+    border-radius: 3%;
 }
 
 .nieuwsblokje p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    font-weight: lighter;
 }
 
-.nieuwsblokje :first-of-type {
-    list-style-type: circle;
-    list-style-type: black;
+.nieuwsblokje ul:nth-of-type(1)::marker {
+    color: black;
 }
 
-.nieuwsblokje:nth-of-type(2) {
-    list-style-type: circle;
-    list-style-type: dodgerblue;
+.nieuwsblokje ul:nth-of-type(2)::marker {
+    color: dodgerblue;
+}
+
+.nieuwsblokje ul:nth-of-type(3)::marker {
+    color: red;
+}
+
+.nieuwsblokje ul:nth-of-type(4)::marker {
+    color:orange;
+}
+
+.nieuwsblokje ul:nth-last-child(5)::marker {
+    color: mediumvioletred;
+}
+
+aside {
+    width: 20vw;
+}
+
+aside h2 {
+    color: black;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
     font-size: small;
 }
 
-.voorpaginaLinkjes {
-    list-style-type: none;
-    li:nth-of-type(1) {
-        font-weight: bold;
-    }
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0.02em outset;
+    border-color: gainsboro;
 }
 
-.economieLinkjes {
+footer ul {
     list-style-type: none;
-    li:nth-of-type(1) {
-        color:dodgerblue;
-        font-weight: bold;
-    }
 }
 
-.sportLinkjes {
+.voorpaginaLinkjes li:nth-of-type(1) {
     list-style-type: none;
-    li:nth-of-type(1) {
-        color: red;
-        font-weight: bold;
-    }
+    font-weight: bold;
 }
 
-.media_cultuurLinkjes {
+.economieLinkjes li:nth-of-type(1) {
     list-style-type: none;
-    li:nth-of-type(1){
-        color: orange;
-        font-weight: bold;
-    }
+    color:dodgerblue;
+    font-weight: bold;
 }
 
-.overigeLinkjes {
+.sportLinkjes li:nth-of-type(1) {
     list-style-type: none;
-    li:nth-of-type(1){
-        color: cadetblue;
-        font-weight: bold;
+    color: red;
+    font-weight: bold;
     }
+
+.media_cultuurLinkjes li:nth-of-type(1){
+    list-style-type: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.overigeLinkjes li:nth-of-type(1){
+    list-style-type: none;
+    color: cadetblue;
+    font-weight: bold;
 }
 
 .linkjes {
@@ -176,7 +283,35 @@ footer {
 
 }
 
+.social_media {
+    width: 2em;
+    height: 2em;
+}
+
 .uitgelichte_videos {
     display: grid;
-    grid-template-columns: 1em;
+    grid-template-columns: 1vw;
+}
+
+footer section:last-of-type {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section:last-of-type ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+footer section p:first-of-type {
+    font-weight: bold;
+    gap: 5vw;
+}
+
+footer section p:last-of-type {
+    color: grey;
+    font-weight: lighter;
+    gap: 20vw;
 }

@@ -133,10 +133,11 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - opdracht met container queries maken & toepassen op eigen site
+  - alt-tags iets algemener maken
+  - nadenken over toevoegingen voor de site
+  - asides toevoegen
+  - site nog meer responsive maken dmv media queries
 
 </details>
 
