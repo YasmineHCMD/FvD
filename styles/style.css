@@ -6,47 +6,119 @@
 }
 
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
     
     color-scheme: light dark;
-    --bg: light-dark(lightgrey, black);
-    --clr: light-dark(black, White);
+    --bg: light-dark(white, black);
+    --clr: light-dark(black, white);
 }
     html:has([value="light"]:checked) {
     color-scheme: light;
+
     }
     html:has([value="dark"]:checked) {
     color-scheme: dark;
     }
+
+    html:has([value="smaller"]:checked) {
+        h2 {
+            font-size: smaller; 
+        }
+
+        li {
+            font-size: xx-small;
+        }
+
+        p {
+            font-size: xx-small;
+        }
+    }
+
+    html:has([value="small"]:checked) {
+        h2 {
+            font-size: small; 
+        }
+
+        li {
+            font-size: smaller;
+        }
+
+        p {
+            font-size: smaller;
+        }
+    }
+
+    html:has([value="medium"]:checked) {
+        h2 {
+            font-size: medium;
+        }
+
+        li {
+            font-size: medium;
+        }
+
+        p {
+            font-size: medium;
+        }
+    }
+
+    html:has([value="large"]:checked) {
+        h2 {
+            font-size: larger; 
+        }
+
+        li {
+            font-size: large;
+        }
+
+        p {
+            font-size: large;
+        }
+    }
+
+    html:has([value="larger"]:checked) {
+        h2 {
+            font-size: xx-large; 
+        }
+
+        li {
+            font-size: larger;
+        }
+
+        p {
+            font-size: larger;
+        }
+    }
+
     html {
-    color: var(--clr);
-    background-color: var(--bg);
+        scroll-behavior: smooth;
+        width: 100vw;
+        min-width: fit-content;
     }
 
 
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
 body {
     width: 100vw;
+}
+
+@keyframes iconHover {
+    0% {
+        scale: 1;
+    }
+
+    40% {
+        scale: 2;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 header {
@@ -54,10 +126,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: white;
     border: 0.02em outset;
     border-color: gainsboro;
     padding: 0.01em;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
 }
 
 header ul {
@@ -78,20 +154,8 @@ li {
     padding: 1em;
 }
 
-header li:nth-of-type(3) {
-    color:dodgerblue;
-}
-
-header li:nth-of-type(4) {
-    color: red;
-}
-
-header li:nth-of-type(5) {
-    color: orange;
-}
-
-header li:nth-of-type(6) {
-    color:mediumvioletred;
+a {
+    text-decoration-line: none;
 }
 
 .logo {
@@ -99,12 +163,70 @@ header li:nth-of-type(6) {
     height: 40px;
 }
 
+.dodgerblue {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+
+.mediumvioletred {
+    color: mediumvioletred;
+    font-weight: bold;
+}
+
+.cadetblue {
+    color: cadetblue;
+    font-weight: bold;
+}
+
 header section {
     display: flex;
     flex-direction:row;
     align-items: center;
     column-gap: 1vw;
-    margin-left: 3vw;
+}
+
+.scherminstellingen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.01em;
+    border: 0.02em outset;
+    border-color: gainsboro;
+}
+
+.scherminstellingen h2 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.scherminstellingen section {
+    display: flex;
+    justify-content: center;
+}
+
+input [type="radio"]:after {
+    width: 1vw;
+    height: 1vw;
+    accent-color: cadetblue;
+
+}
+
+input [type="radio"]:after:checked {
+    width: 1vw;
+    height: 1vw;
+    accent-color: cadetblue;
 }
 
 #dropdown_menu {
@@ -134,11 +256,23 @@ header section {
 }
 
 .icon:hover {
-    transform: scale(1.5);
+    border: 1.5px solid cadetblue;
+    animation-name: iconHover;
+    animation-duration: 2s;
 }
 
 main {
-    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 h2 {
@@ -147,9 +281,15 @@ h2 {
 }
 
 p {
+    display: flex;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: bold;
+}
+
+a:hover {
+    color: cadetblue;
 }
 
 .nieuwsblokje {
@@ -157,37 +297,14 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vw;
-    position: relative;
+    padding: 0;
 }
 
 .nieuwsblokje h2 {
+    display: flex;
+    justify-content: left;
     font-size: large;
     font-weight: bold;
-}
-
-.nieuwsblokje:nth-of-type(2) {
-    h2 {
-    color: dodgerblue;
-    }
-}
-
-.nieuwsblokje:nth-of-type(3) {
-    h2 {
-    color: red;
-    }
-}
-
-.nieuwsblokje:nth-of-type(4) {
-    h2 {
-    color: orange;
-    }
-}
-
-.nieuwsblokje:nth-of-type(5) {
-    h2 {
-    color: mediumvioletred;
-    }
 }
 
 .nieuwsblokje img {
@@ -195,38 +312,116 @@ p {
     border-radius: 3%;
 }
 
+.nieuwsblokje ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .nieuwsblokje p {
+    display: flex;
+    justify-content: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: lighter;
 }
 
-.nieuwsblokje ul:nth-of-type(1)::marker {
-    color: black;
-}
-
-.nieuwsblokje ul:nth-of-type(2)::marker {
-    color: dodgerblue;
-}
-
-.nieuwsblokje ul:nth-of-type(3)::marker {
-    color: red;
-}
-
-.nieuwsblokje ul:nth-of-type(4)::marker {
-    color:orange;
-}
-
-.nieuwsblokje ul:nth-last-child(5)::marker {
-    color: mediumvioletred;
-}
 
 aside {
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    padding: 0;
 }
 
 aside h2 {
-    color: black;
+    display: flex;
+    justify-content: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+aside img {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 10em;
+    height: 7em;
+    border-radius: 3%;
+}
+
+aside p {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.nieuws_aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 1em;
+    border-radius: 3%;
+}
+
+.nieuws_aside:nth-of-type(2) {
+    background-color: dodgerblue;
+}
+
+.nieuws_aside:nth-of-type(3) {
+    background-color: red;
+}
+
+.nieuws_aside:nth-of-type(4) {
+    background-color: orange;
+}
+
+.nieuws_aside:nth-of-type(5) {
+    background-color: mediumvioletred;
+}
+
+
+.aside_icons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_icons ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.aside_icons p {
+    font-weight: normal;
+}
+
+aside:first-of-type ol {
+    list-style-type: circle;
+}
+
+.uitgelichte_videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.uitgelichte_videos img {
+    width: 10em;
+    height: 7em;
+    border-radius: 3%;
+}
+
+.uitgelichte_videos img p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -251,30 +446,6 @@ footer ul {
 
 .voorpaginaLinkjes li:nth-of-type(1) {
     list-style-type: none;
-    font-weight: bold;
-}
-
-.economieLinkjes li:nth-of-type(1) {
-    list-style-type: none;
-    color:dodgerblue;
-    font-weight: bold;
-}
-
-.sportLinkjes li:nth-of-type(1) {
-    list-style-type: none;
-    color: red;
-    font-weight: bold;
-    }
-
-.media_cultuurLinkjes li:nth-of-type(1){
-    list-style-type: none;
-    color: orange;
-    font-weight: bold;
-}
-
-.overigeLinkjes li:nth-of-type(1){
-    list-style-type: none;
-    color: cadetblue;
     font-weight: bold;
 }
 

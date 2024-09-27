@@ -142,17 +142,31 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
 </details>
 
 
-
-
-
 ## Voortgang 2 (week 3)
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Na de eerste feedbacksessie ben ik verder gegaan met het schrijven van content voor mijn site. Zo heb ik per section op de pagina ook een aside toegevoegd met extra nieuwtjes. Ook heb ik nu wat Javascript verwerkt in de website door middel van een dropdown-menu.Daarnaast heb ik naar aanleiding van de theorie uit de lessen een light&dark-mode toegevoegd. 
+  Verder ben ik na gaan denken over de extra opties die ik bij deze opdracht aan de site moet toevoegen. Ik wil sowieso meer hover-effects toevoegen, zowel bij linkjes als bij icoontjes, zodat de site toegankelijker wordt met slechtziende mensen en/of mensen met een screenreader. Ik vind het ook leuk als de site wat vloeiender loopt, ik wil bijvoorbeeld sections in laten faden als de gebruiker daarnaartoe scrollt.
 
+  ### Stand van zaken
+ Inmiddels staat alle content die ik nodig heb op beide pagina's, waarvan het grootste gedeelte ook goed is gestyled en lijkt op de officiele site. De asides en tweede pagina moeten nog wel aangepakt worden, dus dat ga ik volgende week doen. Wat erg gelukkig erg meeviel, was het maken van het dropdown-menu. Met wat hulp van mijn klasgenoot Mariska staat die nu keurig netjes in de header verstopt, inclusief kloppende Javascript-code. Het enige wat nog ontbreekt, is een animatie-effect om het allemaal wat soepeler te laten verlopen.
+ Hetgene waar ik nog steeds de meeste moeite mee heb, is het responsive-gedeelte van de site. Het is nu wel iets beter dan vorige week, maar nog steeds niet goed genoeg. Maar omdat ik heb gekozen voor het surface-aspect van de opdracht, weet ik ook niet hoe het belangrijk het is om hier nu nog heel veel tijd aan te besteden, in plaats van extra dingen aan de site toevoegen. 
+
+  Wat wil ik bespreken tijdens de meeting: 
+  - Algemene feedback op mijn html, css & javascript
+  - Advies over het responsive maken van de site en de relevantie daarvan
+  - Hoe zorg ik ervoor dat de gebruikers door middel van de tab-knop de site kunnen doorlopen?
+  - Welke extra opties kan ik aan de surface toevoegen?
+
+  <img src="readme-images/screenshot-week3_1.png" alt="Screenshot van mijn nagemaakte hoofdpagina in lightmode">
+
+  <img src="readme-images/screenshot-week3_2.png" alt="Screenshot van mijn nagemaakte hoofdpagina in darkmode">
+
+  <img src="readme-images/screenshot-week3_3.png" alt="Screenshot van mijn header met ingeklapt dropdown-menu">
+
+  <img src="readme-images/screenshot-week3_4.png" alt="Screenshot van mijn header met uitgeklapt dropdown-menu">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -167,15 +181,12 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - asides iets nauwkeuriger stylen
+  - linkjes in de header toevoegen naar de sections, dit kan bediend worden met tab
+  - experimenteren met media queries bij de header
+  - een eventuele extra: gebruikers kunnen niet alleen de light/dark-mode van de site bepalen, maar ook de lettergrootte
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -197,8 +208,28 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
+  De laatste week om aan deze opdracht te werken begon met goede moed. Ik heb de asides aangepast om zoveel mogelijk op die van NU.nl zelf te laten lijken. Verder heb ik mijn tweede pagina met uitgelichte video's gestyled. Ik heb daarnaast wat extra opties toegevoegd, zoals een kleine animatie bij het hoveren over icoontjes. Hierbij heb ik ook voor een aparte kleur met veel contrast gekozen die bij alle hover-effecten te zijn zal zijn. Ook heb ik alle sections een eigen achtergrondkleur gegeven, zodat het nu makkelijk te zien is welke onderwerpen en asides er bij elkaar horen. Dit is iets waar ik me bij NU.nl zelf wel eens aan erger. Ook heb ik mijn light&dark-modus wat verbeterd, waardoor deze nu optimaal werkt. Daarbij heb ik ook de optie toegevoegd om de lettergrootte aan te passen, naar aanleiding van het advies van Kim. Ten slotte staan er nu ook daadwerkelijke linkjes in de header, zodat de site nog ook met de tab-toets bestuurd kan worden. 
+  Ondanks al deze aanpassingen en verbeteringen heb ik nu wel 1 groot probleem: de sections & asides op de site staan helemaal niet gecentreerd, terwijl ik alles heb geprobeerd. Hierdoor is het kleine beetje responsiveness dat de site had ook helemaal verdwenen.
+
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  Ik ben nu erg tevreden met alle ontwikkelingen die ik deze week heb verwerkt in de site. Alleen ben ik op dit moment, vlak voor de laatste feedbacksessie best onzeker over mijn site. Ik twijfel namelijk of dit wel genoeg is om een voldoende of uberhaupt het vak te halen. De site heeft (bijna) alle content en styling van de oorspronkelijke site, maar is niet responsive en heeft geen mooie gecentreerde tekst. Ik heb heel veel verschillende dingen geprobeerd om dit op te lossen, zoals media & container queries, display flex & grid, justify content, justify-items & justify-self, maar niks heeft gewerkt. Ik heb mijn klasgenoot Diego er nog naar laten kijken, maar ook hij weet niet hoe dit kan. Daarnaast vind ik de opties die ik heb toegevoegd wel leuk, maar ook niet heel bijzonder. Ik ben dus van plan om wel mijn zorgen te uiten tijdens het feedbackmoment en te vragen hoe ik dit vak nog netjes kan afronden.
+
+  Wat wil ik bespreken tijdens de meeting: 
+  - Algemene feedback op mijn html, css & javascript
+  - Vragen naar een oplossing voor het responsiveness-probleem
+  - Vragen naar een oplossing voor het centratie-probleem
+  - Advies voor nog meer extra opties om te conpenseren
+  - Is dit wel genoeg om het vak te halen?
+
+  <img src="readme-images/screenshot-week4_1.png" alt="Screenshot van mijn nagemaakte hoofdpagina met lettergrootte large">
+
+  <img src="readme-images/screenshot-week4_2.png" alt="Screenshot van de verbeterde sections op de site">
+
+  <img src="readme-images/screenshot-week4_3.png" alt="Screenshot van de manier waarop de site nu gecentreerd is">
+
+  <img src="readme-images/screenshot-week4_4.png" alt="Screenshot van de manier waarop de site gecentreerd hoort te zijn">
 
 
   ### Agenda voor meeting
