@@ -58,9 +58,140 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Tijdens de tweede werkgroep van Frontend Development zijn we ons gaan focussen op de toegankelijkheid van de door ons gekozen site en hoe we dit beter kunnen doen bij onze namaak-versie. Er kunnen namelijk speciale hulpmiddelen worden verwerkt in een site, bijvoorbeeld voor slechtziende mensen of gebruikers met een motorische beperking. In de les hebben we dit zelf kunnen ervaren. We konden eerst verschillende brillen met een beperkt zicht passen en daarmee vervolgens dingen uitvoeren op onze laptop. Verder konden we ervaren hoe het is om met minder vingers te typen en ten slotte konden we door middel van elektroden op onze armen spierspasmes simuleren. Dit was voor ons best grappig om even mee te maken, maar voor gebruikers met deze beperkingen is het belangrijk om hier rekening mee te houden.
 
-Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een screenreader. Dit is een programma dat alle knoppen, links en geschreven tekst voorleest. Deze had ik gelukkig al standaard op mijn laptop staan, waardoor ik snel kon beginnen aan de eerste test. Tijdens deze test moesten we onze gekozen site laten voorlezen door de screenreader en om vervolgens te controleren of dit overal wel goed ging. In het begin was de screenreader best overweldigend voor mij en wist ik niet precies hoe je een specifiek stuk tekst moest laten voorlezen. Maar daar kwam ik later achter: je kunt gewoon een stuk van de pagina selecteren met je cursor en dat wordt dan als enige voorgelezen. Als je niets selecteerd, werd Nu.nl bij mijvan boven naar beneden helemaal voorgelezen. Ik kan me voorstellen dat er gebruikers zijn die dit niet prettig vinden. Verder viel het me op dat er maar weinig alt-tags ware, zowel bij foto's als afbeeldingen van icoontjes. Als een blinde of slechtziende gebruiker zou je dus nooit kunnen weten wat er op de foto's te zien is of waar de icoontjes voor staan. Dit vond ik best schokkend, aangezien wij al vanaf les 1 bij internetstandaarden hebben geleerd dat dit belangrijk is. Uiteindelijk werkt de screenreader bij Nu.nl grotendeels goed, alleen moet je wel precies weten wat je doet. En daarnaast zijn de twee gebreken die ik net heb genoemd zo groot dat ik de site persoonlijk niet toegankelijk genoeg vind. Ik hoop dit dus uiteindelijk te kunnen verbeteren met mijn namaak-versie.
+  Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een screenreader. Dit is een programma dat alle knoppen, links en geschreven tekst voorleest. Deze had ik gelukkig al standaard op mijn laptop staan, waardoor ik snel kon beginnen aan de eerste test. Tijdens deze test moesten we onze gekozen site laten voorlezen door de screenreader en om vervolgens te controleren of dit overal wel goed ging. In het begin was de screenreader best overweldigend voor mij en wist ik niet precies hoe je een specifiek stuk tekst moest laten voorlezen. Maar daar kwam ik later achter: je kunt gewoon een stuk van de pagina selecteren met je cursor en dat wordt dan als enige voorgelezen. Als je niets selecteerd, werd Nu.nl bij mijvan boven naar beneden helemaal voorgelezen. Ik kan me voorstellen dat er gebruikers zijn die dit niet prettig vinden. Verder viel het me op dat er maar weinig alt-tags ware, zowel bij foto's als afbeeldingen van icoontjes. Als een blinde of slechtziende gebruiker zou je dus nooit kunnen weten wat er op de foto's te zien is of waar de icoontjes voor staan. Dit vond ik best schokkend, aangezien wij al vanaf les 1 bij internetstandaarden hebben geleerd dat dit belangrijk is. Uiteindelijk werkt de screenreader bij Nu.nl grotendeels goed, alleen moet je wel precies weten wat je doet. En daarnaast zijn de twee gebreken die ik net heb genoemd zo groot dat ik de site persoonlijk niet toegankelijk genoeg vind. Ik hoop dit dus uiteindelijk te kunnen verbeteren met mijn namaak-versie.
 
   ### Bevindingen
+
+  De officiele checklist van The A11Y Project toegepast op NU.nl:
+
+  - Use plain language and avoid figures of speech, idioms, and complicated metaphors: Ja
+
+  - Make sure that button, a, and label element content is unique and descriptive: Nee
+   
+  - Use left-aligned text for left-to-right (LTR) languages, and right-aligned text for right-to-left (RTL) languages: Ja
+ 
+  - Validate your HTML: Ja
+
+  - Use a lang attribute on the html element: Ja 
+
+  - Provide a unique title for each page or view Nee
+
+  - Ensure that viewport zoom is not disabled: Nee
+
+  - Use landmark elements to indicate important content regions: Ja
+
+  - Ensure a linear content flow: Ja
+
+  - Avoid using the autofocus attribute: Ja
+
+  - Allow extending session timeouts: Nee
+
+  - Remove title attribute tooltips: Nee
+
+  - Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input: Ja
+
+  - Check to see that keyboard focus order matches the visual layout: Ja
+
+  - Remove invisible focusable elements: Nee
+
+  - Make sure that all img elements have an alt attribute: Nee
+
+  - Make sure that decorative images use null alt (empty) attribute values: Nee
+
+  - Provide a text alternative for complex images such as charts, graphs, and maps: Nee
+
+  - For images containing text, make sure the alt description includes the image's text: Nee
+
+  - Use heading elements to introduce content: Ja
+
+  - Use only one h1 element per page or view: Ja
+
+  - Heading elements should be written in a logical sequence: Ja
+
+  - Don't skip heading levels: Ja
+
+  - Use list elements (ol, ul, and dl elements) for list content: Nee
+
+  - Use the a element for links: Ja
+
+  - Ensure that links are recognizable as links: Nee
+
+  - Ensure that controls have :focus states: Ja
+
+  - Use the button element for buttons: Nee
+
+  - Provide a skip link and make sure that it is visible when focused: Ja
+
+  - Identify links that open in a new tab or window: Nee
+
+  - Use the table element to describe tabular data: Nee
+
+  - Use the th element for table headers (with appropriate scope attributes): Nee
+
+  - Use the caption element to provide a title for the table: Nee
+
+  - All inputs in a form are associated with a corresponding label element: Ja
+
+  - Use fieldset and legend elements where appropriate: Nee
+
+  - Inputs use autocomplete where appropriate: Nee
+
+  - Make sure that form input errors are displayed in list above the form after submission: Nee
+
+  - Associate input error messaging with the input it corresponds to: Ja
+
+  - Make sure that error, warning, and success states are not visually communicated by just color: Nee
+
+  - Make sure that media does not autoplay: Nee
+
+  - Ensure that media controls use appropriate markup: Ja
+
+  - Check to see that all media can be paused: Ja
+
+  - Confirm the presence of captions: Nee
+
+  - Remove seizure triggers: Nee
+
+  - Confirm that transcripts are available: Nee
+
+  - Check your content in specialized browsing modes: Nee
+
+  - Increase text size to 200%: Nee
+
+  - Double-check that good proximity between content is maintained: Nee
+
+  - Make sure color isn't the only way information is conveyed: Ja
+
+  - Make sure instructions are not visual or audio-only: Nee
+
+  - Use a simple, straightforward, and consistent layout: Ja
+
+  - Ensure animations are subtle and do not flash too much: Nee
+
+  - Provide a mechanism to pause background video: Nee
+
+  - Make sure all animation obeys the prefers-reduced-motion media query: Nee
+
+  - Check the contrast for all normal-sized text: Ja
+
+  - Check the contrast for all large-sized text: Ja
+
+  - Check the contrast for all icons: Nee
+
+  - Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.): Nee
+
+  - Check text that overlaps images or video: Ja
+
+  - Check custom ::selection colors: Ja
+
+  - Check that the site can be rotated to any orientation: Nee
+
+  - Remove horizontal scrolling: Nee
+
+  - Ensure that button and link icons can be activated with ease: Ja
+
+  - Ensure sufficient space between interactive items in order to provide a scroll area: Ja
+
   Lijst met je bevindingen die in de test naar voren kwamen:
   
   - Nu.nl kent ondanks zijn professionaliteit toch wel wat fouten in de code. Bij het inspecteren kwamen er 5 errors, 19 issues en 13 infos naar voren.
@@ -151,8 +282,8 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   Verder ben ik na gaan denken over de extra opties die ik bij deze opdracht aan de site moet toevoegen. Ik wil sowieso meer hover-effects toevoegen, zowel bij linkjes als bij icoontjes, zodat de site toegankelijker wordt met slechtziende mensen en/of mensen met een screenreader. Ik vind het ook leuk als de site wat vloeiender loopt, ik wil bijvoorbeeld sections in laten faden als de gebruiker daarnaartoe scrollt.
 
   ### Stand van zaken
- Inmiddels staat alle content die ik nodig heb op beide pagina's, waarvan het grootste gedeelte ook goed is gestyled en lijkt op de officiele site. De asides en tweede pagina moeten nog wel aangepakt worden, dus dat ga ik volgende week doen. Wat erg gelukkig erg meeviel, was het maken van het dropdown-menu. Met wat hulp van mijn klasgenoot Mariska staat die nu keurig netjes in de header verstopt, inclusief kloppende Javascript-code. Het enige wat nog ontbreekt, is een animatie-effect om het allemaal wat soepeler te laten verlopen.
- Hetgene waar ik nog steeds de meeste moeite mee heb, is het responsive-gedeelte van de site. Het is nu wel iets beter dan vorige week, maar nog steeds niet goed genoeg. Maar omdat ik heb gekozen voor het surface-aspect van de opdracht, weet ik ook niet hoe het belangrijk het is om hier nu nog heel veel tijd aan te besteden, in plaats van extra dingen aan de site toevoegen. 
+  Inmiddels staat alle content die ik nodig heb op beide pagina's, waarvan het grootste gedeelte ook goed is gestyled en lijkt op de officiele site. De asides en tweede pagina moeten nog wel aangepakt worden, dus dat ga ik volgende week doen. Wat erg gelukkig erg meeviel, was het maken van het dropdown-menu. Met wat hulp van mijn klasgenoot Mariska staat die nu keurig netjes in de header verstopt, inclusief kloppende Javascript-code. Het enige wat nog ontbreekt, is een animatie-effect om het allemaal wat soepeler te laten verlopen.
+  Hetgene waar ik nog steeds de meeste moeite mee heb, is het responsive-gedeelte van de site. Het is nu wel iets beter dan vorige week, maar nog steeds niet goed genoeg. Maar omdat ik heb gekozen voor het surface-aspect van de opdracht, weet ik ook niet hoe het belangrijk het is om hier nu nog heel veel tijd aan te besteden, in plaats van extra dingen aan de site toevoegen. 
 
   Wat wil ik bespreken tijdens de meeting: 
   - Algemene feedback op mijn html, css & javascript
@@ -195,13 +326,142 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
+
+De officiele checklist van The A11Y Project toegepast op mijn nagemaakte versie van NU.nl:
+
+  - Use plain language and avoid figures of speech, idioms, and complicated metaphors: Ja
+
+  - Make sure that button, a, and label element content is unique and descriptive: Ja
+   
+  - Use left-aligned text for left-to-right (LTR) languages, and right-aligned text for right-to-left (RTL) languages: Ja
+ 
+  - Validate your HTML: Ja
+
+  - Use a lang attribute on the html element: Ja 
+
+  - Provide a unique title for each page or view. Ja
+
+  - Ensure that viewport zoom is not disabled: Ja
+
+  - Use landmark elements to indicate important content regions: Ja
+
+  - Ensure a linear content flow: Ja
+
+  - Avoid using the autofocus attribute: Ja
+
+  - Allow extending session timeouts: Nee
+
+  - Remove title attribute tooltips: Nee
+
+  - Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input: Ja
+
+  - Check to see that keyboard focus order matches the visual layout: Ja
+
+  - Remove invisible focusable elements: Nee
+
+  - Make sure that all img elements have an alt attribute: Ja
+
+  - Make sure that decorative images use null alt (empty) attribute values: Nee
+
+  - Provide a text alternative for complex images such as charts, graphs, and maps: Nee
+
+  - For images containing text, make sure the alt description includes the image's text: Ja
+
+  - Use heading elements to introduce content: Ja
+
+  - Use only one h1 element per page or view: Ja
+
+  - Heading elements should be written in a logical sequence: Ja
+
+  - Don't skip heading levels: Ja
+
+  - Use list elements (ol, ul, and dl elements) for list content: Ja
+
+  - Use the a element for links: Ja
+
+  - Ensure that links are recognizable as links: Ja
+
+  - Ensure that controls have :focus states: Ja
+
+  - Use the button element for buttons: Nee
+
+  - Provide a skip link and make sure that it is visible when focused: Ja
+
+  - Identify links that open in a new tab or window: Nee
+
+  - Use the table element to describe tabular data: Nee
+
+  - Use the th element for table headers (with appropriate scope attributes): Nee
+
+  - Use the caption element to provide a title for the table: Nee
+
+  - All inputs in a form are associated with a corresponding label element: Ja
+
+  - Use fieldset and legend elements where appropriate: Nee
+
+  - Inputs use autocomplete where appropriate: Nee
+
+  - Make sure that form input errors are displayed in list above the form after submission: Nee
+
+  - Associate input error messaging with the input it corresponds to: Ja
+
+  - Make sure that error, warning, and success states are not visually communicated by just color: Nee
+
+  - Make sure that media does not autoplay: Nee
+
+  - Ensure that media controls use appropriate markup: Ja
+
+  - Check to see that all media can be paused: Ja
+
+  - Confirm the presence of captions: Nee
+
+  - Remove seizure triggers: Ja
+
+  - Confirm that transcripts are available: Nee
+
+  - Check your content in specialized browsing modes: Ja
+
+  - Increase text size to 200%: Ja
+
+  - Double-check that good proximity between content is maintained: Ja
+
+  - Make sure color isn't the only way information is conveyed: Ja
+
+  - Make sure instructions are not visual or audio-only: Nee
+
+  - Use a simple, straightforward, and consistent layout: Ja
+
+  - Ensure animations are subtle and do not flash too much: Ja
+
+  - Provide a mechanism to pause background video: Nee
+
+  - Make sure all animation obeys the prefers-reduced-motion media query: Nee
+
+  - Check the contrast for all normal-sized text: Ja
+
+  - Check the contrast for all large-sized text: Ja
+
+  - Check the contrast for all icons: Ja
+
+  - Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.): Ja
+
+  - Check text that overlaps images or video: Ja
+
+  - Check custom ::selection colors: Ja
+
+  - Check that the site can be rotated to any orientation: Nee
+
+  - Remove horizontal scrolling: Ja
+
+  - Ensure that button and link icons can be activated with ease: Ja
+
+  - Ensure sufficient space between interactive items in order to provide a scroll area: Ja
+
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  - 
+
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -245,10 +505,9 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Website veranderen naar mobiel scherm in plaats van desktop scherm
+  - Afbeeldingen een vaste grootte geven
+  - Light/darkmode & lettergrootte los van elkaar zetten
 
 </details>
 
@@ -261,25 +520,28 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Tijdens het laatste feedbackgesprek en het eindgesprek heb ik de code van mijn site helemaal overhoop gehaald en veranderd. Ik ben er bij het feedbackmoment achter gekomen dat de site op dat moment niet goed genoeg was en dat ik niet zo door kon gaan. Ik heb vervolgens de hele indeling veranderd, zodat de site op een mobiel scherm past, in plaats van op een desktop. Hierdoor was het ook makkelijker om de site responsive te maken, en uiteindelijk schaalt nu alles - zolang het maar binnen een mobiel scherm is - mooi mee. Verder heb ik wat onderdelen weggelaten, omdat mijn vorige ontwerp veel te lang was en daardoor de code onoverzichtelijk. De site bestaat nu alleen uit het laatste nieuws met daaronder de asides. Deze staan nu allemaal netjes onder elkaar met genoeg ruimte ertussen.
+  Qua toevoegingen aan de surface is het grotendeels hetzelfde gebleven. Gebruikers kunnen nog steeds via de links naar andere sections op de pagina springen, er is een dropdown-menu en een unieke hover-kleur om aan te geven wat een link is en wat niet. De icoontjes en knoppen hebben nu wel een achtergrondkleur gekregen om ze meer op knoppen te laten lijken, maar ook omdat ze niet goed zichtbaar waren in de darkmode. De radiobuttons voor de scherminstellingen staan nu netjes in het midden en hebben dezelfde kleur als de hover, en bij het veranderen van de tekstgrootte staan deze ook mooier gepositioneerd. Ten slotte heb ik nog een banner toegevoegd met een h1-tag, omdat deze bij NU.nl zelf ontbreekt, en nog een unieke animatie.
 
+  ### Je uitkomst - karakteristiek screenshots:
+  <img src="/readme-images/FED-pagina1.pdf">
+  <img src="/readme-images/FED-pagina2.pdf">
+  <img src="/readme-images/NU-inspect.png">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Hoewel ik in eerste instantie best gestresst raakte van het feit dat ik de site drastisch moest aanpassen, ben ik toch blij dat ik deze keuze heb gemaakt. De site is nu veel prettiger om naar te kijken, maar ook gebruiksvriendelijk vanwege de responsiveness, het optie om de tekstgrootte te veranderen en de nieuwe knoppen. Verder ben ik ook erg te spreken over de animaties, en de manier waarop het dropdown-menu en de footer ingedeeld zijn. Maar het belangrijkste van deze ervaring vind ik, dat ik nu meer vertrouwen heb in mijn codeervaardigheden en ik binnen een korte termijn toch een bijna geheel nieuwe site uit de grond kan werken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/NU-darkmode.png">
+  <img src="/readme-images/NU-dropdown.png">
+  <img src="/readme-images/NU-footer.png">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Tijdens het coderen heb ik nog het meeste moeite gehad met het centreren van content, op sommige plekken was dit gewoon niet mogelijk. Daarnaast duurde het ook een tijd voordat mijn dropdown-menu werkend was. Pas na het raadplegen van ChatGPT zag ik waar de fout zat, de link naar het Javascript-bestand stond niet op de goede plek. Tot slot zijn er natuurlijk nog dingen die ik extra had willen doen, maar er de tijd niet voor had, zoals meer animaties, het leren gebruiken van media queries en de html:has-functie in meer detail toepassen.
+  Dit is iets wat ik graag anders had willen doen en zeker nog in de toekomst wil leren. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
-
-
-
-
 
 ## Bronnenlijst
 
@@ -290,8 +552,17 @@ Een van de hulpmiddelen die we sowieso in onze site moeten verwerken is een scre
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Ten eerste ben ik goed geholpen door Ivo en de drie studentassistenten
+  2. Verder hebben mijn klasgenoten Diego en Mariska ook soms geholpen als ik vastliep.
+  3. Om te controleren of dingen klopten, heb ik hier en daar gebruik gemaakt van ChatGPT.
+  4. Qua algemene bronnen heb ik vooral gebruik gemaakt van W3Schools, CSS Tricks, GeeksforGeeks, SheCodes, Quora & Stack Overflow
+  5. Alle SVG'tjes zijn afkomstig van: https://www.svgrepo.com/vectors/
+  6. Om de link naar de hompage in het logo te zetten, heb ik https://www.tutorialspoint.com/how-to-use-an-image-as-a-link-in-html gebruikt
+  7. Om binnen 1 pagina naar een andere section te gaan heb ik deze tutorial gebruikt: https://www.youtube.com/watch?v=8c4CA8MTZvU
+  8. Voor het maken van de radio buttons bij de scherminstellingen heb ik deze powerpoint van DLO gebruikt: https://dlo.mijnhva.nl/content/enforced/609314-FDMCI-2000FED121-DMCI-CMD-2425/FED%2024-25%20-%20Blok%201%20-%20Intro%20kleurtjes%20met%20has%20en%20lightdark.pdf
+  9. Bij het dropdown-menu linken aan Javascript ben ik geholpen door Mariska
+  10. Om te ontdekken wat mijn fout was bij mijn Javascript-bestand, heb ik ChatGPT om hulp te gevraagd.
+  11. Om de kleur van de geselecteerde radio buttons te veranderen heb ik deze bron gebruikt: https://www.tutorialspoint.comhow-to-change-the-color-of-the-radio-button-using-css
+  12. Voor de animatie in de banner heb ik deze YouTube-tutorial geraadgepleegd: https://www.youtube.com/watch?v=xqKrVvA48E4
 
 </details>

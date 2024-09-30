@@ -1,7 +1,7 @@
 console.log("Hello world!")
 
-const dropdown_knop = document.getElementById("dropdown_knop");
-const dropdown_menu = document.getElementById("dropdown_menu");
+const dropdown_knop = document.getElementById("dropdown-button");
+const dropdown_menu = document.getElementById("dropdown-menu");
 
 let stateMenu = false;
 

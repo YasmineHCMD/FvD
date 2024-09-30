@@ -1,356 +1,273 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/x-icon" href="images/Logo-nu_nl.png">
-    <title>Eindopdracht Frontend Development</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <img class="logo" src="images/Logo-nu_nl.png" alt="Het logo van Nu.nl: een blauwe cirkel met het woord Nu, met daarnaast een rode cirkel met het woord .nl">
-            <ul>
-                <li>Net binnen</li>
-                <li>Algemeen</li>
-                <li><a class="dodgerblue" href="#economie">Economie</a></li>
-                <li><a class="red" href="#sport">Sport</a></li>
-                <li><a class="orange" href="#media_en_cultuur">Media en Cultuur</a></li>
-                <li><a class="mediumvioletred" href="#achterklap">Achterklap</a></li>
-                <li>Shop</li>
-                <li id="dropdown_knop">Meer v</li>
-            </ul>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/NU-logo.png">
+        <link rel="stylesheet" href="/styles/style.css">
+        <title>NU.nl Homepage: Eindopdracht Frontend Development | Yasmine Hennik - 500932421 - klas 210</title>
+    </head>
+    <body>
+        <header>
+            <section id="logo">
+<!--https://www.tutorialspoint.com/how-to-use-an-image-as-a-link-in-html-->    
+                <a href="/index.html"><img src="/images/NU-logo.png" alt="Het logo van NU.nl"></a>
+                <p>NU.nl</p>
+            </section>
 
-        <section>
-        <img class="icon" src="/images/search_icon.png" alt="De zoekknop">
-        <img class="icon" src="/images/settings_icon.png" alt="De knop naar instellingen">
-        <img class="icon" src="/images/user_icon.png" alt="De knop voor gebruikers met een account">
-        <p>Inloggen</p>
-        </section>
-    </header>
+            <section id="icons">
+<!--https://www.svgrepo.com/vectors/-->
+                <img src="/images/search-icon.svg" class="icon" alt="De zoekknop van deze website">
+                <img src="/images/settings-icon.svg" class="icon" alt="De knop naar de instellingen van de knop">
+                <img src="/images/user-icon.svg" class="icon" alt="De knop om als gebruiker aan te melden of in te loggen op de site">
+                <p>Inloggen</p>
+            </section>
+        </header>
 
-    <section id="dropdown_menu">
-        <ul class="voorpaginaLinkjes">
-            <li>Voorpagina</li>
-            <li>Net binnen</li>
-            <li>Meest gelezen</li>
-            <li>Oorlog in Oekraine</li>
-            <li>Oorlog in Israel en Hamas</li>
-            <li>Amerikaanse verkiezingen</li>
-            <li>Binnenland</li>
-            <li>Buitenland</li>
-            <li>Algemeen</li>
-            <li>Politiek</li>
-            <li>Uit andere media</li>
-            <li>Video</li>
-            <li>Podcast</li>
-            <li>Weer</li>
-        </ul>
-
-        <ul class="economieLinkjes">
-            <li><a class="dodgerblue" href="#economie">Economie</a></li>
-            <li>Klimaat</li>
-            <li>Tech</li>
-            <li>Wonen</li>
-            <li>Geld</li>
-            <li>Werk</li>
-            <li>Auto</li>
-        </ul>
-
-        <ul class="sportLinkjes">
-            <li><a class="red" href="#sport">Sport</a></li>
-            <li>Voetbal</li>
-            <li>EK Voetbal</li>
-            <li>Tour de France</li>
-            <li>Olympische Spelen</li>
-            <li>Formule 1</li>
-            <li>Scorebord</li>
-            <li>Sportspellen</li>
-        </ul>
-
-        <ul class="media_cultuurLinkjes">
-            <li><a class="orange" href="#media_en_cultuur">Media en Cultuur</a></li>
-            <li>Films en series</li>
-            <li>Muziek</li>
-            <li>Boek en cultuur</li>
-            <li>Media</li>
-            <li>Achterklap</li>
-            <li>Koningshuis</li>
-            <li>TV gids</li>
-        </ul>
-
-        <ul class="overigeLinkjes">
-            <li class="cadetblue">Overig</li>
-            <li>Slimmer leven</li>
-            <li>Het Woord</li>
-            <li>Kind en Gezin</li>
-            <li>Dieren</li>
-            <li>Eten en Drinken</li>
-            <li>Gezondheid</li>
-            <li>NUcheckt</li>
-            <li>Opmerkelijk</li>
-            <li>Wetenschap</li>
-        </ul>
-
-        <ul class="linkjes">
-            <li>Spellen</li>
-            <li>Over NU.nl</li>
-            <li>NUshop</li>
-            <li>Adverteren</li>
-        </ul>
-    </section>
-
-    <section class="scherminstellingen">
-        <h2>Scherminstellingen</h2>
-        <section>
-            <label>
-                <input type="radio" name="theme" value="light" checked> licht
-            </label>
-            <label>
-                <input type="radio" name="theme" value="dark"> donker
-            </label>
-        </section>
-    
-        <section>
-            <label>
-                <input type="radio" name="theme" value="smaller"> smaller
-            </label>
-            <label>
-                <input type="radio" name="theme" value="small" checked> small
-            </label>
-            <label>
-                <input type="radio" name="theme" value="medium"> medium
-            </label>
-            <label>
-                <input type="radio" name="theme" value="large"> large
-            </label>
-            <label>
-                <input type="radio" name="theme" value="larger"> larger
-            </label>
-        </section>
-    </section>
-       
-    <main>
-        <p>Donderdag 12 september 2024 | Het laatste nieuws het eerst op NU.nl</p>
-        <section class="nieuws_aside">
-            <section class="nieuwsblokje">
-                <img src="https://media.nu.nl/m/ts0xy2rahl1b_wd854/fatbike.jpg" alt="Foto van drie mensen, allemaal rijdend op een fatbike">
-                <h2 class="beschrijving">Inspectie legt sinds juli beslag op 16.500 illegale Chinese fatbikes</h2>
+            <nav>
                 <ul>
-                    <li>Oplichting door nepagenten neemt toe: al duizenden incidenten meer dan in 2023</li>
-                    <li>Amerikaanse vestigt wereldrecord door in 108 dagen de wereld rond te fietsen</li>
-                    <li>McLaren wijzigt strategie en vraagt Piastri om Norris te helpen in titelstrijd</li>
-                    <li>Consumentenorganisaties klagen over manipulatie met muntjes in games</li>
-                    <li>Pechgeneratie heeft niet met alles pech: meer vermogen en vaker werk</li>
-                    <li>Australische militairen raken onderscheiding kwijt vanwege oorlogsmisdaden</li>
-                    <li>Steeds meer mensen gebruiken vakantiepark als vaste woonplaats</li>
+                    <li>Voorpagina</li>
+<!--https://www.youtube.com/watch?v=8c4CA8MTZvU-->
+                    <li><a href="#net_binnen">Net binnen</a></li>
+                    <li><a href="populair.html">Populair</a></li>
+                    <li id="dropdown-button">Meer v</li>
+                </ul>
+            </nav>
+
+<!--Shout-out naar Mariska!-->
+            <section id="dropdown-menu">
+                <ul>
+                    <li>Voorpagina</li>
+                    <li><a href="#net_binnen">Net binnen</a></li>
+                    <li><a href="#meest_gelezen">Meest gelezen</a></li>
+                    <li>Oorlog in Oekraïne</li>
+                    <li>Oorlog Israël en Hamas</li>
+                    <li>Amerikaanse verkiezingen 2024</li>
+                    <li>Binnenland</li>
+                    <li>Buitenland</li>
+                    <li>Algemeen</li>
+                    <li>Politiek</li>
+                    <li>Uit andere media</li>
+                    <li>Video</li>
+                    <li>Podcast</li>
+                    <li>Weer</li>
+                </ul>
+
+                <ul>
+                    <li>Economie</li>
+                    <li>Klimaat</li>
+                    <li>Tech</li>
+                    <li>Wonen</li>
+                    <li>Geld</li>
+                    <li>Werk</li>
+                    <li>Auto</li>
+                </ul>
+
+                <ul>
+                    <li>Sport</li>
+                    <li>Voetbal</li>
+                    <li>Formule 1</li>
+                    <li>Wielrennen</li>
+                    <li>Tennis</li>
+                    <li>Sport Overig</li>
+                    <li>Scorebord</li>
+                    <li>Sportspellen</li>
+                </ul>
+
+                <ul>
+                    <li>Media en Cultuur</li>
+                    <li>Films en series</li>
+                    <li>Muziek</li>
+                    <li>Boek en Cultuur</li>
+                    <li>Media</li>
+                    <li>Achterklap</li>
+                    <li>Koningshuis</li>
+                    <li>TV gids</li>
+                </ul>
+
+                <ul>
+                    <li>Overig</li>
+                    <li>Slimmer Leven</li>
+                    <li>Het Woord</li>
+                    <li>Kind en Gezin</li>
+                    <li>Dieren</li>
+                    <li>Eten en drinken</li>
+                    <li>Gezondheid</li>
+                    <li>NUcheckt</li>
+                    <li>Opmerkelijk</li>
+                    <li>Wetenschap</li>
+                </ul>
+
+                <ul>
+                    <li>Spellen</li>
+                    <li>Over NU.nl</li>
+                    <li>NUshop</li>
+                    <li>Adverteren</li>
                 </ul>
             </section>
 
-            <aside>
-                <section class="aside_icons">
-                    <ul>
-                        <li><img class="icon" src="/images/weer.png" alt="De knop naar het weerbericht"><p>14°C</p></li>
-                        <li><img class="icon" src="/images/tvgids.png" alt="De knop van de TVgids"><p>TV Gids</p></li>
-                        <li><img class="icon" src="/images/sport.png" alt="De knop naar de sport-pagina"><p>0 live</p></li>
-                        <li><img class="icon" src="/images/file.png" alt="De knop naar de verkeerspagina"><p>20 km</p></li>
-                        <li><img class="icon" src="/images/spelletjes.png" alt="De knop naar de spelletjes-pagina"><p>Spellen</p></li>
-                    </ul>
-                </section>
+<!--https://dlo.mijnhva.nl/content/enforced/609314-FDMCI-2000FED121-DMCI-CMD-2425/FED%2024-25%20-%20Blok%201%20-%20Intro%20kleurtjes%20met%20has%20en%20lightdark.pdf-->
+            <section class="scherminstellingen">
+                <p>Licht/Donker-modus:</p>
+                <label>
+                    <input type="radio" name="theme" value="light" checked> Licht
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="dark"> Donker
+                </label>
+            </section>
+
+            <section class="scherminstellingen">
+                <p>Lettergrootte:</p>
+                <label>
+                    <input type="radio" name="font-size" value="smaller"> Kleiner
+                </label>
+                <label>
+                    <input type="radio" name="font-size" value="small"> Klein
+                </label>
+                <label>
+                    <input type="radio" name="font-size" value="medium" checked> Medium
+                </label>
+                <label>
+                    <input type="radio" name="font-size" value="large"> Groot
+                </label>
+                <label>
+                    <input type="radio" name="font-size" value="larger"> Groter
+                </label>
+            </section>
+
+<!--https://www.youtube.com/watch?v=xqKrVvA48E4-->
+            <section id="banner">
+                <h1>Welkom op NU.nl</h1>
+                <p class="typing-animation">Het laatste nieuws, het eerst op NU.nl</p>
+            </section>
+
+        <main>
+            <section id="buttons">
+                <div class="button"><img src="/images/weather-icon.svg" class="icon" alt="De knop naar het weerbericht"><p>14°C</p></div>
+                <div class="button"><img src="/images/tvgids-icon.svg" class="icon" alt="De knop naar TVgids"><p>TV gids</p></div>
+                <div class="button"><img src="/images/sport-icon.svg" class="icon" alt="De knop naar de pagina over sport"><p>0 live</p></div>
+                <div class="button"><img src="/images/file-icon.svg" class="icon" alt="De knop naar de pagina over files"><p>20 km</p></div>
+                <div class="button"><img src="/images/spelletjes-icon.svg" class="icon" alt="De knop naar de spelletjes-pagina"><p>Spellen</p></div>
+            </section>
+
+            <section class="nieuws">
+                <img src="https://media.nu.nl/m/ts0xy2rahl1b_wd854/fatbike.jpg" alt="Foto van drie mensen, allemaal rijdend op een fatbike">
+                <p>Inspectie legt sinds juli beslag op 16.500 illegale Chinese fatbikes</p>
+                <ul>
+                    <li><img src="https://media.nu.nl/m/5wkxz6qa435p_wd854/oplichting-door-nepagenten-neemt-toe-al-duizenden-incidenten-meer-dan-in-2023.jpg" alt="Foto van een bord dat waarschuwt voor babbeltrucs">Oplichting door nepagenten neemt toe: al duizenden incidenten meer dan in 2023</li>
+                    <li><img src="https://media.nu.nl/m/yr5xo6xaub73_wd854/amerikaanse-vestigt-wereldrecord-door-in-108-dagen-de-wereld-rond-te-fietsen.jpg" alt="Foto van de Lael Wilcox lachend naast hier fiets voor een groep mensen">Amerikaanse vestigt wereldrecord door in 108 dagen de wereld rond te fietsen</li>
+                    <li><img src="https://media.nu.nl/m/jucx85nahjyu_wd854/mclaren-wijzigt-strategie-en-vraagt-piastri-om-norris-te-helpen-in-titelstrijd.jpg" alt="Foto van Oscar Piastri, Lando Norris en Max Verstappen">McLaren wijzigt strategie en vraagt Piastri om Norris te helpen in titelstrijd</li>
+                    <li><img src="https://media.nu.nl/m/emfxx4dayhq6_wd854/clash-of-clans.jpg" alt="Foto van de game Clash of Clans">Consumentenorganisaties klagen over manipulatie met muntjes in games</li>
+                    <li><img src="https://media.nu.nl/m/ahqx0qla55x6_wd854/pechgeneratie-studenten-demonstreren.jpg" alt="Foto van een groep protesterende jongeren">Pechgeneratie heeft niet met alles pech: meer vermogen en vaker werk</li>
+                    <li><img src="https://media.nu.nl/m/4vjxvu6anvl8_wd854/australische-militairen-raken-onderscheiding-kwijt-vanwege-oorlogsmisdaden.jpg" alt="Foto van Richard Marles, de Australische minister van Defensie">Australische militairen raken onderscheiding kwijt vanwege oorlogsmisdaden</li>
+                    <li><img src="https://media.nu.nl/m/tcgx7rtak6uz_wd854/steeds-meer-mensen-gebruiken-vakantiepark-als-vaste-woonplaats.jpg" alt="Foto van een vakantiepark vanuit de lucht">Steeds meer mensen gebruiken vakantiepark als vaste woonplaats</li>
+                </ul>
+                <h3>Meer Algemeen > </h3>
+            </section>
+
+            <section id="videos">
+                <h2>Nieuwsvideo's</h2>
+                <ul>
+                    <li class="video"><img src="https://media.nu.nl/m/ijax61papefd_wd640/militairen-springen-uit-vliegtuig-en-nemen-gronings-oefendorp-in.jpg" alt="Thumbnail van een video waarop militairen met een parachute naar beneden springen">Militairen springen uit vliegtuig en nemen Gronings oefendorp in</li>
+                    <li class="video"><img src="https://media.nu.nl/m/2dex6qvaalot_wd640/dak-van-brabantse-autogarage-stort-in-door-flinke-plas-water.jpg" alt="Thumbnail van een video waarop het dak van een garage instort">Dak van Brabantse autogarage stort in door flinke plas water</li>
+                    <li class="video"><img src="https://media.nu.nl/m/zfwxpu5awglf_wd640/koningspaar-rijdt-met-amerikaanse-veteraan-naar-mesch.jpg" alt="Thumbnail van een video waarop het Koningspaar met een veteraan in een auto zitten">Koningspaar rijdt met Amerikaanse veteraan naar Mesch</li>
+                    <li class="video"><img src="https://media.nu.nl/m/yauxpija8lyl_wd640/enorme-gasbellen-te-zien-op-gedetailleerde-beelden-van-ster.jpg" alt="Thumbnail van een video waarop een sterrenhemel met gasbellen te zien is">Enorme gasbellen te zien op gedetailleerde beelden van ster</li>
+                    <li class="video"><img src="https://media.nu.nl/m/5stx6yjaz17e_wd640/amerikaanse-ruimtetoerist-neemt-als-eerste-kijkje-buiten-ruimteschip.jpg" alt="Thumbnail van een video waarop een astronaut in de ruimte te zien is">Amerikaanse ruimtetoerist neemt als eerste kijkje buiten ruimteschip</li>
+                    <li class="video"><img src="https://media.nu.nl/m/ohrx2nwaj5w2_wd640/enorme-lichtstralen-markeren-plek-waar-twin-towers-stonden-in-new-york.jpg" alt="Thumbnail van een video waarop de skyline van New York met daarin twee lichtstralen te zien is">Enorme lichtstralen markeren plek waar Twin Towers stonden in New York</li>
+                    <li class="video"><img src="https://media.nu.nl/m/7kaxewqardkw_wd640/biden-zet-kort-rode-trump-pet-op-tijdens-herdenking-911.jpg" alt="Thumbnail van een video waarop Joe Biden met een Trump-pet op te zien is">Biden zet kort rode Trump-pet op tijdens herdenking 9/11</li>
+                    <li class="video"><img src="https://media.nu.nl/m/iecxefcaoikd_wd640/is-deze-ikea-drone-het-antwoord-op-de-russische-kamikazedrones.jpg" alt="Thumbnail van een video waarop een grafisch vormgegeven 'Ikea-drone' te zien is">Is deze 'Ikea-drone' het antwoord op de Russische kamikazedrones?</li>
+                </ul>
+            </section>
+
+            <aside id="net_binnen">
                 <h2>Net binnen</h2>
                 <ol>
-                    <li>11:35 Enkhuizer die veel kinderporno maakte is al sinds 2022 in beeld bij politie</li>
-                    <li>11:30 Duitse regering bereid om Volkswagen te helpen</li>
-                    <li>11:25 Expert zegt dat verongelukte Titan dagen voor implosie al kapot was</li>
+                    <li><p>11:35</p>Enkhuizer die veel kinderporno maakte is al sinds 2022 in beeld bij politie</li>
+                    <li><p>11:30</p>Duitse regering bereid om Volkswagen te helpen</li>
+                    <li><p>11:25</p>Expert zegt dat verongelukte Titan dagen voor implosie al kapot was</li>
                 </ol>
             </aside>
-        </section>
-
-        <section class="nieuws_aside">
-            <section class="nieuwsblokje" id="economie">
-                <h2>Economie</h2>
-                <img src="https://media.nu.nl/m/jzqx2tfai5nm_wd854/nog-meer-vacatures-in-de-ggz-grootste-aantal-sinds-begin-2018.jpg" alt="Foto van een gesprek tussen twee mensen, waarschijnlijk een therapiesessie">
-                <h2 class="beschrijving">Nog meer vacatures in de GGZ: grootste aantal sinds begin 2018</h2>
-                <ul>
-                    <li>Apple-oortjes in de VS goedgekeurd als gehoorapparaat</li>
-                    <li>Microsoft ontslaat weer honderden medewerkers van gameafdeling</li>
-                    <li>Europese Commissie onderzoekt verkoop racecircuit Nurburgring</li>
-                    <li>Pechgeneratie heeft niet met alles pech: meer vermogen en vaker werk</li>
-                    <li>Wereldwijde gamesensatie Flappy Bird keert na ruim tien jaar terug</li>
-                    <li>In augustus minder faillisementen dan in juli, vooral handelssector is de dupe</li>
-                </ul>
-            </section>
 
             <aside>
                 <h2>Nieuwsblogs</h2>
-                    <img src="https://media.nu.nl/m/excxzkhay5js_std320/vaccinatie-gaza.jpg" alt="nieuwsblog 1"><p>Blog Midden-Oosten | Ook vitamines en mineralen bij poliovaccin kinderen Gaza</p>
-                    <img src="https://media.nu.nl/m/nk4xkzqacar3_std320/blog-vs-iraanse-hackers-stuurden-materiaal-trump-campagne-naar-democraten.jpg" alt="nieuwsblog 2"><p>Blog VS | Iraanse hackers stuurden materiaal Trump-campagne naar Democraten</p>
-                    <img src="https://media.nu.nl/m/uy5xcjmayo19_std320/blog-oekraine-rusland-zou-aanval-op-kursk-al-maanden-hebben-verwacht.jpg" alt="nieuwsblog 3"><p>Blog Oekraine | Rusland zou aanval op Kursk al maanden hebben verwacht</p>
-            </aside>
-        </section>
-
-   
-        <section class="nieuws_aside">
-            <section class="nieuwsblokje" id="sport">
-                <h2>Sport</h2>
-                <img src="https://media.nu.nl/m/6v0x3diaar09_wd854/nederland-ziet-portugal-na-slechte-week-dichterbij-komen-op-coefficientenranglijst.jpg" alt="Foto van het huidige eftal van PSV">
-                <h2 class="beschrijving">Nederland ziet Portugal na slechte week dichterbij komen op coëfficiëntenranglijst</h2>
                 <ul>
-                    <li>Nederlandse judobond zet coach Purssey aan de kant na mislukte Spelen</li>
-                    <li>Femke Bol en Sifan Hassan maken kans op titel Europees atlete van het jaar</li>
-                    <li>Feyenoord-coach Priske schafte huddle zelf af: 'Tast geloofwaardigheid niet aan.'</li>
-                    <li>Voormalig NAC-spits Graham Arnold stapt op als bondscoach Australië</li>
-                    <li>Bizot wint van Scherpen in Champions League, rode kaart nekt Barça bij Monaco</li>
+                    <li><img src="https://media.nu.nl/m/excxzkhay5js_std320/vaccinatie-gaza.jpg" alt="Foto van kinderen in Gaza die medicijnen krijgen"><p>Blog Midden-Oosten | Ook vitamines en mineralen bij poliovaccin kinderen Gaza</p></li>
+                    <li><img src="https://media.nu.nl/m/nk4xkzqacar3_std320/blog-vs-iraanse-hackers-stuurden-materiaal-trump-campagne-naar-democraten.jpg" alt="Foto van Donald Trump"><p>Blog VS | Iraanse hackers stuurden materiaal Trump-campagne naar Democraten</p></li>
+                    <li><img src="https://media.nu.nl/m/uy5xcjmayo19_std320/blog-oekraine-rusland-zou-aanval-op-kursk-al-maanden-hebben-verwacht.jpg" alt="Foto van militairen in een oorlogsgebied"><p>Blog Oekraine | Rusland zou aanval op Kursk al maanden hebben verwacht</p></li>
                 </ul>
-            </section>
+            </aside>
 
-            <aside>
+            <aside id="meest_gelezen">
                 <h2>Meest gelezen</h2>
                 <ol>
-                    <li>De aarde krijgt tijdelijk een tweede maan: 'Een buurmaan'.</li>
-                    <li>Overleden zakenman Mohamed Al Fayed beschuldigd van seksueel misbruik</li>
-                    <li>800.000 euro boete voor finfluencers voor promoten illegale vermogensbeheerder</li>
+                    <li><p>1.</p>De aarde krijgt tijdelijk een tweede maan: 'Een buurmaan'.</li>
+                    <li><p>2.</p>Overleden zakenman Mohamed Al Fayed beschuldigd van seksueel misbruik</li>
+                    <li><p>3.</p>800.000 euro boete voor finfluencers voor promoten illegale vermogensbeheerder</li>
                 </ol>
             </aside>
-        </section>
-      
-        <section class="nieuws_aside">
-            <section class="nieuwsblokje" id="media_en_cultuur">
-                <h2>Media en Cultuur</h2>
-                <img src="https://media.nu.nl/m/ap2xvzra201t_wd854/ivo-niehe.jpg" alt="Foto van Ivo Niehe">
-                <h2 class="beschrijving">Ivo Niehe schenkt zijn archief aan Beeld & Geluid</h2>
-                <ul>
-                    <li>AD gaat brievenrubriek tegen licht houden na AI-stunt Alexander Klöpping</li>
-                    <li>Gwen Stefani brengt na acht jaar weer nieuw album uit</li>
-                    <li>Diddy mag proces niet in vrijheid afwachten van rechter</li>
-                </ul>
-            </section>
 
             <aside>
                 <h2>Meest besproken op NUjij</h2>
-                    <img src="https://media.nu.nl/m/01qxlxaaaf1e_std320/ben-sulayem-lewis-hamilton.jpg" alt="nieuwsblog 1"><p>Hamilton vindt vergelijking FIA-voorzitter ongepast: 'Zit racistisch element in'</p>
-                    <img src="https://media.nu.nl/m/rzixf80au5rs_std320/man-26-aangehouden-voor-maken-kinderporno-honderden-jonge-jongens.jpg" alt="nieuwsblog 2"><p>Man (26) aangehouden voor maken kinderporno honderden jonge jongens</p>
-                    <img src="https://media.nu.nl/m/kzkxg49a48yb_std320/bbc-telt-ruim-70000-russische-doden-sinds-inval-in-oekraine.jpg" alt="nieuwsblog 3"><p>BBC telt ruim 70.000 Russische doden sinds inval in Oekraine</p>
-            </aside>
-        </section>
-
-       <section class="nieuws_aside">
-            <section class="nieuwsblokje" id="achterklap">
-                <h2>Achterklap</h2>
-                <img src="https://media.nu.nl/m/3o5xedeaepkv_wd854/deense-koningin-margrethe-na-val-opgenomen-in-ziekenhuis.jpg" alt="Foto van de Deense koningin Margrethe">
-                <h2 class="beschrijving">Deense koningin Margrethe na val opgenomen in ziekenhuis</h2>
                 <ul>
-                    <li>Dua Lipa wil niet zoals haar collega"s details over privéleven in liedjes delen</li>
-                    <li>Simon Keizer denkt dat zijn leven er zonder Jan Smit heel anders had uitgezien</li>
-                    <li>Zanger Charlie Puth getrouwd met vriendin Brooke: 'Gelukkigste man ter wereld'</li>
+                    <li><img src="https://media.nu.nl/m/01qxlxaaaf1e_std320/ben-sulayem-lewis-hamilton.jpg" alt="Foto van Lewis Hamilton met FIA-voorzitter Mohammed Ben Sulayem"><p>Hamilton vindt vergelijking FIA-voorzitter ongepast: 'Zit racistisch element in'</p></li>
+                    <li><img src="https://media.nu.nl/m/rzixf80au5rs_std320/man-26-aangehouden-voor-maken-kinderporno-honderden-jonge-jongens.jpg" alt="Foto van twee geparkeerde politiewagens"><p>Man (26) aangehouden voor maken kinderporno honderden jonge jongens</p></li>
+                    <li><img src="https://media.nu.nl/m/kzkxg49a48yb_std320/bbc-telt-ruim-70000-russische-doden-sinds-inval-in-oekraine.jpg" alt="Foto van mensen bij een paar vernietigde huizen"><p>BBC telt ruim 70.000 Russische doden sinds inval in Oekraine</p></li>
                 </ul>
-            </section>
+            </aside>
 
             <aside>
                 <h2>Meest gespeelde spellen</h2>
-                    <img src="https://media.nu.nl/m/vunx81iava32_std320/het-woord-van-vandaag-raad-jij-het-woord-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Het Woord van Vandaag"><p>Het Woord van Vandaag: Raad jij het woord van de dag?</p>
-                    <img src="https://media.nu.nl/m/ap4xri6a32bk_std320/het-woord-van-vandaag-raad-jij-ook-het-zesletterwoord-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Het Woord van Vandaag"><p>Het Woord van Vandaag: Raad jij ook het zesletterwoord van de dag?</p>
-                    <img src="https://media.nu.nl/m/p5lxtmra6kvl_std320/raad-jij-de-stad-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Raad de Stad"><p>Raad jij de stad van de dag?</p>
+                <ul>
+                    <li><img src="https://media.nu.nl/m/vunx81iava32_std320/het-woord-van-vandaag-raad-jij-het-woord-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Het Woord van Vandaag"><p>Het Woord van Vandaag: Raad jij het woord van de dag?</p></li>
+                    <li><img src="https://media.nu.nl/m/ap4xri6a32bk_std320/het-woord-van-vandaag-raad-jij-ook-het-zesletterwoord-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Het Woord van Vandaag"><p>Het Woord van Vandaag: Raad jij ook het zesletterwoord van de dag?</p></li>
+                    <li><img src="https://media.nu.nl/m/p5lxtmra6kvl_std320/raad-jij-de-stad-van-de-dag.jpg" alt="Tekening van het NU.nl-spel Raad de Stad"><p>Raad jij de stad van de dag?</p></li>
+                </ul>
+                <h3>Meer Meest gespeeld > </h3>
             </aside>
-       </section>
+        </main>
+        <footer>
+            <section id="kopjes">
+                <ul>
+                    <li>Voorpagina</li>
+                    <li>Economie</li>
+                    <li>Sport</li>
+                    <li>Media en cultuur</li>
+                    <li>Overig</li>
+                </ul>
+            </section>
 
-    <script src="scripts/javascript.js"></script>
-    </main>
+            <section>
+                <ul>
+                    <li>Contact met de redactie</li>
+                    <li>Colofon</li>
+                    <li>Nieuwsbrieven</li>
+                    <li>Over NU.nl</li>
+                    <li>Huisregels NUjij</li>
+                    <li>Copyright</li>
+                    <li>Disclaimer</li>
+                    <li>Privacy en cookiebeleid</li>
+                    <li>Klachten/Feedback</li>
+                    <li>Toegankelijkheid</li>
+                    <li>Adverteren</li>
+                    <li>Apps</li>
+                    <li>Werken bij NU.nl</li>
+                    <li>Verzekeringsvergelijker</li>
+                    <li>Privacy instellingen</li>
+                </ul>
+            </section>
+            
+            <section>
+                <p>Volg ons op:</p>
+                <img src="/images/instagram-logo.webp" class="icon" alt="De knop naar het Instagram-account van NU.nl">
+                <img src="/images/facebook-logo.png" class="icon" alt="De knop naar de Facebook-pagina van NU.nl">
+                <img src="/images/x-logo.webp" class="icon" alt="De knop naar het X-account van NU.nl">
+                <img src="/images/rss-logo.png" class="icon" alt="De knop naar de RSS-code van NU.nl">
+                <p>©2024 DPG Media B.V. - alle rechten voorbehouden</p>
+            </section>
 
-    <footer>
-        <section>
-            <ul class="voorpaginaLinkjes">
-                <li>Voorpagina</li>
-                <li>Net binnen</li>
-                <li>Meest gelezen</li>
-                <li>Oorlog in Oekraine</li>
-                <li>Oorlog in Israel en Hamas</li>
-                <li>Amerikaanse verkiezingen</li>
-                <li>Binnenland</li>
-                <li>Buitenland</li>
-                <li>Algemeen</li>
-                <li>Politiek</li>
-                <li>Uit andere media</li>
-                <li>Video</li>
-                <li>Podcast</li>
-                <li>Weer</li>
-            </ul>
+            <script src="/scripts/javascript.js"></script>
 
-            <ul class="economieLinkjes">
-                <li><a class="dodgerblue" href="#economie">Economie</a></li>
-                <li>Klimaat</li>
-                <li>Tech</li>
-                <li>Wonen</li>
-                <li>Geld</li>
-                <li>Werk</li>
-                <li>Auto</li>
-            </ul>
-
-            <ul class="sportLinkjes">
-                <li><a class="red" href="#sport">Sport</a></li>
-                <li>Voetbal</li>
-                <li>EK Voetbal</li>
-                <li>Tour de France</li>
-                <li>Olympische Spelen</li>
-                <li>Formule 1</li>
-                <li>Scorebord</li>
-                <li>Sportspellen</li>
-            </ul>
-
-            <ul class="media_cultuurLinkjes">
-                <li><a class="orange" href="#media_en_cultuur">Media en Cultuur</a></li>
-                <li>Films en series</li>
-                <li>Muziek</li>
-                <li>Boek en cultuur</li>
-                <li>Media</li>
-                <li>Achterklap</li>
-                <li>Koningshuis</li>
-                <li>TV gids</li>
-            </ul>
-
-            <ul class="overigeLinkjes">
-                <li class="cadetblue">Overig</li>
-                <li>Slimmer leven</li>
-                <li>Het Woord</li>
-                <li>Kind en Gezin</li>
-                <li>Dieren</li>
-                <li>Eten en Drinken</li>
-                <li>Gezondheid</li>
-                <li>NUcheckt</li>
-                <li>Opmerkelijk</li>
-                <li>Wetenschap</li>
-            </ul>
-
-            <ul class="linkjes">
-                <li>Contact met de redactie</li>
-                <li>Colofon</li>
-                <li>Nieuwsberichten</li>
-                <li>Over NU.nl</li>
-                <li>Copyright</li>
-                <li>Disclaimer</li>
-                <li>Privacy en cookiebeleid</li>
-                <li>Klachten / Feedback</li>
-                <li>Toegankelijkheid</li>
-                <li>Adverteren</li>
-                <li>Apps</li>
-                <li>Werken bij Nu.nl</li>
-                <li>Verzekeringvergelijker</li>
-                <li>Privacy instellingen</li>
-            </ul>
-        </section>
-
-        <section>
-            <p>Volg ons op:</p>
-            <ul>
-                <li><img class="social_media" src="/images/instagram.png" alt="Het Instagram-logo in het rood"></li>
-                <li><img class="social_media" src="/images/facebook.png" alt="Het Facebook-logo in het rood"></li>
-                <li><img class="social_media" src="/images/x.png" alt="Het X-logo in het rood"></li>
-                <li><img class="social_media" src="/images/rss.png" alt="Het RSS-logo in het rood"></li>
-            </ul>
-            <p>2024 DPG Media B.V. - alle rechten voorbehouden</p>
-        </section>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
