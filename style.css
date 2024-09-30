@@ -5,7 +5,6 @@ html {
 
 :root {
     --border-color: lightgray;
-    --header-color: #121857;
 
     color-scheme: light dark;
     --bg: light-dark(white, black);
@@ -97,14 +96,14 @@ h2 {
     display: flex;
     justify-content: left;
     padding: 0.5em;
-    color: var(--header-color);
+    color: #121857;
 }
 
 h3 {
     display: flex;
     justify-content: center;
     font-size: small;
-    color: var(--header-color);
+    color: #121857;
 }
 
 header {
@@ -159,7 +158,7 @@ header .icon:last-of-type {
 #logo p {
     font-weight: 600;
     font-size: larger;
-    color: var(--header-color);
+    color: #121857;
 }
 
 .icon {
@@ -268,7 +267,7 @@ a:focus {
 .scherminstellingen p {
     font-weight: 600;
     font-size: large;
-    color:var(--header-color);
+    color:#121857;
 }
 
 input[type="radio"] {
